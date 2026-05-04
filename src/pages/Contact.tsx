@@ -111,7 +111,7 @@ export default function Contact() {
     setTimeout(() => setStatus("idle"), 5000);
   };
 
-  const isReady = EMAILJS_SERVICE_ID !== "YOUR_SERVICE_ID";
+  const isReady = true;
 
   return (
     <div style={{ minHeight: "100vh", display: "flex", flexDirection: "column", background: "#0B0C10", fontFamily: "'Space Grotesk', sans-serif", color: "#C5C6C7" }}>

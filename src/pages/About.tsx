@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import type { Variants } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import { ArrowLeft, ArrowUpRight } from "lucide-react";
 import { FaLinkedin, FaGithub, FaXTwitter } from "react-icons/fa6";
@@ -48,12 +49,12 @@ const SOCIALS = [
   { icon: SiSubstack, label: "Substack", href: "https://substack.com/@leinadmori" },
 ];
 
-const fadeUp = {
+const fadeUp: Variants = {
   hidden: { opacity: 0, y: 24 },
   show: (i: number) => ({
     opacity: 1,
     y: 0,
-    transition: { delay: i * 0.1, duration: 0.55, ease: "easeOut" },
+    transition: { delay: i * 0.1, duration: 0.55, ease: "easeOut" as const },
   }),
 };
 

@@ -88,7 +88,7 @@ export default function Contact() {
     setStatus("sending");
 
     try {
-      const { default: emailjs } = await import("emailjs-com");
+      const emailjs = await import("@emailjs/browser");
       await emailjs.send(
         EMAILJS_SERVICE_ID,
         EMAILJS_TEMPLATE_ID,

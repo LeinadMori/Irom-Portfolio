@@ -30,8 +30,8 @@ const PORTALS = [
   },
   {
     id: "frontend-lab",
-    label: "Frontend Lab",
-    tag: "FRONTEND DEVELOPER",
+    label: "Engineering Lab",
+    tag: "SOFTWARE ENGINEER",
     description: "Case studies from idea to shipped, working product.",
     path: "/frontend-lab",
     accent: "#39FF88",
@@ -103,14 +103,21 @@ export default function Home() {
       </div>
 
       {/* Hero */}
-      <div style={{ padding: "80px 40px 40px", textAlign: "center", position: "relative", zIndex: 5 }}>
+      <div style={{ padding: "70px 40px 40px", textAlign: "center", position: "relative", zIndex: 5 }}>
         <motion.img
           initial={{ opacity: 0, scale: 0.85 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6 }}
           src={brandLogo}
           alt="Daniel Irom"
-          style={{ width: "94px", height: "84px", objectFit: "contain", margin: "0 auto 28px", borderRadius: "16px" }}
+          style={{
+            width: "168px",
+            height: "168px",
+            objectFit: "contain",
+            margin: "0 auto 20px",
+            borderRadius: "24px",
+            filter: "drop-shadow(0 0 32px rgba(168,85,247,0.35))",
+          }}
         />
 
         <motion.h1

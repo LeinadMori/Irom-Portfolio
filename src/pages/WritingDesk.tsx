@@ -41,7 +41,7 @@ export default function WritingDesk() {
           Words people remember.
         </motion.h1>
         <p style={{ maxWidth: "440px", margin: "0 auto", color: theme.dim, fontSize: "15px", lineHeight: 1.7 }}>
-          Sports journalism, short fiction, poetry, and brand copy — filed under one byline.
+          Sports journalism, short fiction, poetry, and brand copy  filed under one byline.
         </p>
       </div>
 

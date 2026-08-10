@@ -65,7 +65,15 @@ export default function ArticleExcerpt() {
             {article.date} · {article.readTime} read
           </p>
 
-          <p style={{ fontSize: "18px", lineHeight: 1.85, color: theme.text }}>{article.excerpt}</p>
+          {article.body ? (
+            <div style={{ fontSize: "18px", lineHeight: 1.9, color: theme.text }}>
+              {article.body.map((paragraph, i) => (
+                <p key={i} style={{ marginBottom: "24px", whiteSpace: "pre-line" }}>{paragraph}</p>
+              ))}
+            </div>
+          ) : (
+            <p style={{ fontSize: "18px", lineHeight: 1.85, color: theme.text }}>{article.excerpt}</p>
+          )}
 
           {article.externalUrl ? (
             <a
@@ -91,8 +99,8 @@ export default function ArticleExcerpt() {
               Continue Reading <ArrowUpRight size={14} />
             </a>
           ) : (
-            <p style={{ marginTop: "40px", fontFamily: theme.bodyFont, fontSize: "12px", color: theme.dim }}>
-              — End —
+            <p style={{ marginTop: "40px", fontFamily: theme.bodyFont, fontSize: "12px", color: theme.dim, textAlign: "center" }}>
+              ✦ end ✦
             </p>
           )}
         </motion.div>

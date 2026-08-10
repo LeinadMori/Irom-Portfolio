@@ -39,8 +39,8 @@ export type Campaign = {
       brief: "PLACEHOLDER — concept summary.",
       prompts: ["PLACEHOLDER — prompt one", "PLACEHOLDER — prompt two"],
       stills: [],
-      videoSrc: "/videos/donut-launch.mp4",
-      posterSrc: "/images/campaigns/donut-poster.jpg",
+      videoSrc: "/videos/Donut_bite_luxury_food_commercial_202607241436-222.mp4",
+      posterSrc: "/images/campaigns/donut-poster.jpeg",
     },
     {
       slug: "coffee-campaign",
